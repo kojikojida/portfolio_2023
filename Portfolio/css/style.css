@@ -1,0 +1,845 @@
+@charset "utf-8";
+
+body{
+    margin: 0;
+    background-color: #e6d5b1;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+    color: #e6d5b1;
+}
+
+img{
+    vertical-align: bottom;
+    width: 100%;
+    height: auto;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/*-------- 画像 -------*/
+
+.top-photo-wrapper{
+    max-width: 100%;
+    height: auto;
+    padding: 80px;
+    margin: 60px;
+    margin-top: 150px;
+}
+
+.top-photo-title{
+    font-size: 36px;
+    font-weight: normal;
+    letter-spacing: .4rem;
+    line-height: 1;
+    margin-bottom: 10px;
+    font-family: 'Unna', serif;
+    text-align: center;
+    border-bottom: solid #000;
+}
+
+.photo-view-more{
+    margin-top: 50px;
+    float: center;
+    font-family: 'Unna', serif;
+    letter-spacing: 0.3rem;
+}
+
+.top-work-wrapper{
+    max-width: 100%;
+    height: auto;
+    padding: 80px;
+    margin: 60px;
+    margin-top: 150px;
+}
+
+.top-work-title{
+    font-size: 36px;
+    font-weight: normal;
+    letter-spacing: .4rem;
+    line-height: 1;
+    margin-bottom: 10px;
+    font-family: 'Unna', serif;
+    text-align: center;
+    border-bottom: solid #000;
+}
+
+.work-view-more{
+    margin-top: 50px;
+    float: center;
+    font-family: 'Unna', serif;
+    letter-spacing: 0.3rem;
+}
+
+/*------- スライドショー -------*/
+
+.swiper img{
+    width: 100%;
+    height: auto;
+}
+
+.swiper-btn a{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 200px;
+    padding: 10px 25px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+}
+
+.swiper-btn a:before,
+.swiper-btn a:after{
+	content: '';
+	width: 18px;
+	height: 18px;
+	border-color: #000000;
+	box-sizing: border-box;
+	border-style :solid;
+	display: block;
+	position: absolute;
+	transition: all 0.3s ease-in-out;
+}
+
+.swiper-btn a:before{
+	top: -6px;
+	left: -6px;
+	border-width: 2px 0 0 2px;
+	z-index: 5;
+}
+
+.swiper-btn a:after{
+	bottom: -6px;
+	right: -6px;
+	border-width: 0 2px 2px 0;
+}
+
+.swiper-btn a:hover:before,
+.swiper-btn a:hover:after{
+	width: calc(100% + 12px);
+	height: calc(100% + 12px);
+	border-color: #000000;
+}
+
+.swiper-btn a:hover{
+	color: #fff;
+	background-color: #000000;
+	border-color: #000000;
+}
+
+  
+/* スライド全体 */
+.swiper-slide{
+    transition: transform 0.6s;
+}
+  
+/* 左右のスライド */
+.swiper-slide-prev,
+.swiper-slide-next,
+.swiper-slide-duplicate-prev,
+.swiper-slide-duplicate-next{
+    transform: scale(0.85);
+}
+
+/*------- header ----------*/
+
+#gnav{
+    width: 100%;
+    top: 0;
+    z-index: 200;
+    background-color: #417534;
+}
+
+.nav-box{
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: 70%;
+    margin: 10px auto;
+    margin-top: -.1%;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    line-height: 1.6;
+    margin: 0;
+    font-size: 26px;
+    letter-spacing: 0.1em;
+    font-family: 'Unna', serif;
+    transition: all .3s ease;
+    text-decoration: none;
+}
+
+.logo:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.nav-box ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-box li{
+    display: list-item;
+    padding: 20px;
+}
+
+.menu{
+    font-size: 24px;
+}
+
+.menu-nav{
+    font-family: 'Unna', serif;
+    letter-spacing: 0.1rem;
+}
+
+/*------ ナビアンダーバー ----------*/
+
+.menu-nav a{
+  display: inline-block;
+  color: #e6d5b1;
+  text-decoration:none;
+  position: relative;
+  transition: .3s;
+}
+
+.menu-nav a::after{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	content: '';
+	width: 0;
+	height: 1px;
+	background-color: #000;
+	transition: .3s;
+	transform: translateX(-50%);
+}
+
+.menu-nav a:hover::after{
+	width: 100%;
+}
+
+/*------- instagram img --------- */
+
+#instagram{
+    width: 52px;
+}
+
+
+/*------- main ---------*/
+
+.main-contents{
+    width: 98%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    align-items: flex-end;
+    position: relative;
+}
+
+.main-text{
+    font-size: 22px;
+    font-family: 'Unna', serif;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px;
+}
+
+.main-img{
+    width: 70%;
+    height: auto;
+}
+
+.main-title{
+    font-size: 54px;
+    font-family: 'Unna', serif;
+    margin-bottom: 10em;
+    line-height: 1.6;
+}
+
+/*----- top-about -----*/
+
+#top-about-main{
+    margin: 150px 0;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.top-about-contents{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-about-img{
+    width: 22%;
+    height: 33%;
+    object-fit: cover;
+    margin-left: 10%;
+}
+
+.top-about-wrapper{
+    max-width: 57%;
+    height: auto;
+    padding: 80px;
+}
+
+.top-about-title{
+    font-size: 36px;
+    font-weight: normal;
+    letter-spacing: .4rem;
+    line-height: 1;
+    margin-bottom: -10px;
+    font-family: 'Unna', serif;
+    text-align: center;
+    border-bottom: solid #000;
+}
+
+.top-about-text{
+    margin-bottom: 40px;
+    line-height: 3rem;
+    letter-spacing: 0.1rem;
+    font-family: 'Unna', serif;
+    text-align: left;
+    font-size: 25px;
+}
+
+.view-more{
+    margin-top: 10px;
+    float: right;
+    font-family: 'Unna', serif;
+    letter-spacing: 0.3rem;
+}
+
+.btn a{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 200px;
+    padding: 10px 25px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+}
+
+.btn a:before,
+.btn a:after{
+	content: '';
+	width: 18px;
+	height: 18px;
+	border-color: #000000;
+	box-sizing: border-box;
+	border-style :solid;
+	display: block;
+	position: absolute;
+	transition: all 0.3s ease-in-out;
+}
+
+.btn a:before{
+	top: -6px;
+	left: -6px;
+	border-width: 2px 0 0 2px;
+	z-index: 5;
+}
+
+.btn a:after{
+	bottom: -6px;
+	right: -6px;
+	border-width: 0 2px 2px 0;
+}
+
+.btn a:hover:before,
+.btn a:hover:after{
+	width: calc(100% + 12px);
+	height: calc(100% + 12px);
+	border-color: #000000;
+}
+
+.btn a:hover{
+	color: #fff;
+	background-color: #000000;
+	border-color: #000000;
+}
+
+/*------ photo -----*/
+
+.photo-wrapper{
+    max-width: 100%;
+    height: auto;
+    padding: 80px;
+    margin: 50px;
+    margin-top: 10px;
+}
+
+.photo-title{
+    font-size: 36px;
+    font-weight: normal;
+    letter-spacing: .4rem;
+    line-height: 1;
+    margin-bottom: 10px;
+    font-family: 'Unna', serif;
+    text-align: center;
+    border-bottom: solid #000;
+}
+
+.photos img{
+    object-fit: cover;
+    width: 380px;
+    height: 390px;
+    margin: 20px;
+    border: double 2px #2c2c2c;
+}
+
+.photo-1,.photo-2,.photo-3,.photo-4,.photo-5,
+.photo-6,.photo-7,.photo-8,.photo-9{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+}
+
+/*------ 画像透過 ------*/
+
+.photos a:hover{ 
+	opacity:0.5;
+	transition:0.2;
+}
+
+/*----- works -----*/
+
+.work-wrapper{
+    max-width: 100%;
+    height: auto;
+    padding: 80px;
+    margin: 50px;
+    margin-top: 10px;
+}
+
+.works-menu{
+    display: block;
+    align-items: start;
+}
+
+#work-title{
+    font-size: 36px;
+    font-weight: normal;
+    letter-spacing: .4rem;
+    line-height: 1;
+    margin-bottom: 10px;
+    font-family: 'Unna', serif;
+    text-align: center;
+}
+
+.daily-ui{
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: .4rem;
+    line-height: 1;
+    margin-bottom: 10px;
+    font-family: 'Unna', serif;
+    align-items: center;
+    display: block;
+}
+
+.work-ui-text{
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: .4rem;
+    line-height: 2;
+    margin-bottom: 10px;
+    font-family: 'Unna', serif; 
+}
+
+.ui-soft{
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: .4rem;
+    line-height: 1;
+    margin-bottom: 10px;
+    margin-top: -20px;
+    font-family: 'Unna', serif;
+    text-align: center;
+    border-bottom: solid #000;
+}
+
+
+.web-soft{
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: .4rem;
+    line-height: 1;
+    margin-bottom: 10px;
+    font-family: 'Unna', serif;
+    text-align: center;
+    border-bottom: solid #000;
+}
+
+.ui img{
+    object-fit: cover;
+    display: block;
+    width: 380px;
+    height: 500px;
+    margin: 20px;
+    border: double 2px #2c2c2c;
+}
+
+.ui-1,
+.ui-2,
+.ui-3{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    margin-left: auto;
+    justify-content: center;
+}
+
+/*-- 画像透過 --*/
+.ui img:hover{ 
+	opacity:0.5;
+	transition:0.2;
+}
+
+#web-title{    
+    font-size: 36px;
+    font-weight: normal;
+    letter-spacing: .4rem;
+    line-height: 1;
+    margin-bottom: 10px;
+    font-family: 'Unna', serif;
+    text-align: center;
+}
+
+.numo-title{
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: .4rem;
+    line-height: 2;
+    margin-bottom: 10px;
+    font-family: 'Unna', serif;
+}
+
+.web-numo{
+    align-items: center;
+    justify-content: center;
+}
+
+.web-numo img{
+    width: 100%;
+    height: auto;
+}
+
+
+.web-numo img:hover{ 
+	opacity:0.5;
+	transition:0.2;
+}
+
+/*----- about -------*/
+
+.about-wrapper{
+    max-width: 100%;
+    height: auto;
+    padding: 80px;
+    margin: 50px;
+    margin-top: 10px;
+}
+
+.about-title{
+    font-size: 36px;
+    font-weight: normal;
+    letter-spacing: .4rem;
+    line-height: 1;
+    margin-bottom: 10px;
+    font-family: 'Unna', serif;
+    text-align: center;
+    border-bottom: solid #000;
+}
+
+.about-text{
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: .2rem;
+    line-height: 2.0;
+    margin-bottom: 10px;
+    font-family: 'Unna', serif;
+    text-align:  left;
+    margin-left: 33em;
+    margin-top: -23em;
+}
+
+.about-img{
+    width: 560px;
+    object-fit: cover;
+    margin-left: 8em;
+}
+
+.shikaku-title{
+    text-align: center;
+    font-size: 36px;
+    font-weight: normal;
+    font-family: 'Unna', serif;
+    border-bottom: double 1px #000;
+    margin-top: 100px;
+}
+
+.shikaku-text{
+    text-align: center;
+    font-family: 'Unna', serif;
+    line-height: 4rem;
+    font-size: 25px;
+    margin-bottom: 50px;
+    padding-top: 15px;
+}
+
+.skill-title{
+    text-align: center;
+    font-size: 36px;
+    font-weight: normal;
+    font-family: 'Unna', serif;
+    border-bottom: double 1px #000;
+    margin-top: 15%;
+}
+
+.skill-design{
+    text-align: center;
+    font-family: 'Unna', serif;
+    line-height: 3rem;
+    font-size: 25px;
+    padding-top: 15px;
+}
+
+.skill-img ul{
+    margin-top: 20px;
+    align-items: center;
+}
+
+.skill-img li{
+    display: inline-block;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    margin-left: 205px;
+}
+
+/*----- contact -----*/
+.form-wrapper{
+    max-width: 100%;
+    height: auto;
+    padding: 80px;
+}
+
+.form-title{
+    font-size: 36px;
+    font-weight: normal;
+    letter-spacing: .4rem;
+    line-height: 1;
+    margin-bottom: 10px;
+    font-family: 'Unna', serif;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: solid #000;
+}
+
+.※{
+    font-family: 'Unna', serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+.form{
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 720px;
+}
+
+.form-Item{  
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.form-Item-Label{
+    width: 100%;
+    max-width: 248px;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.form-Item-Label.isMsg{
+    margin-top: 8px;
+    margin-bottom: auto;
+}
+
+.form-Item-Label-Required{
+    border-radius: 6px;
+    margin-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 48px;
+    display: inline-block;
+    text-align: center;
+    background: #545454;
+    color: #fff;
+    font-size: 14px;
+}
+
+.form-Item-Input{
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-left: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 48px;
+    flex: 1;
+    width: 100%;
+    max-width: 410px;
+    background: #eaedf2;
+    font-size: 18px;
+}
+
+.form-Item-Textarea{
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-left: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 216px;
+    flex: 1;
+    width: 100%;
+    max-width: 410px;
+    background: #eaedf2;
+    font-size: 18px;
+}
+
+.form-Btn-send{
+    border-radius: 6px;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 280px;
+    display: block;
+    letter-spacing: 0.05em;
+    background: #545454;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.form-Btn-re{
+    border-radius: 6px;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 280px;
+    display: block;
+    letter-spacing: 0.05em;
+    background: #545454;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.Btn{
+    display: flex;
+    text-align: center;
+}
+
+.form-Btn-send:hover,
+.form-Btn-re:hover{
+    background-color: #654d01;
+}
+
+/*----- footer -----*/
+
+.footer-wrapper{
+    width: 100%;
+    height: auto;
+    background-color: #417534;
+}
+
+#contact-koko{
+    text-align: left;
+    font-size: 15px;
+    font-family: 'Unna',serif;
+    letter-spacing: .1rem;
+    padding-top: 20px;
+    padding-left: 20px;
+    color: #e6d5b1;
+}
+
+.contact-text{
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Unna', serif;
+    letter-spacing: .2rem;
+    line-height: 1.5;
+    padding-left: 20px;
+    color: #e6d5b1;
+}
+
+.copy{
+    text-align: center;
+    font-size: 14px;
+}
+
+/*---- top-bottom ----*/
+#page-top{
+    position: fixed;
+    right: 5px;
+    bottom: 20px;
+    height: 50px;
+    text-decoration: none;
+    font-weight: normal;
+    font-family: 'Unna', serif;
+    transform: rotate(90deg);
+    font-size: 90%;
+    line-height: 1.5rem;
+    color: #000000;
+    padding: 0 0 0 35px;
+    border-top: solid 1px;
+}
+
+#page-top:before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    width: 15px;
+    border-top: solid 1px;
+    transform: rotate(35deg);
+    transform-origin: left top;
+}
