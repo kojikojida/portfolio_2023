@@ -251,7 +251,7 @@ ul{
 }
 
 .main-text{
-    font-size: 22px;
+    font-size: 18px;
     font-family: 'Unna', serif;
     color: #333;
     display: flex;
@@ -581,7 +581,7 @@ ul{
 }
 
 .about-text{
-    font-size: 24px;
+    font-size: 22px;
     font-weight: normal;
     letter-spacing: .2rem;
     line-height: 2.0;
@@ -589,11 +589,11 @@ ul{
     font-family: 'Unna', serif;
     text-align:  left;
     margin-left: 33em;
-    margin-top: -23em;
+    margin-top: -20em;
 }
 
 .about-img{
-    width: 560px;
+    width: 450px;
     object-fit: cover;
     margin-left: 8em;
 }
